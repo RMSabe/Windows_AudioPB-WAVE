@@ -1128,7 +1128,7 @@ INT WINAPI filein_get_params(VOID)
 		buffer_index += (SIZE_T) (u32 + 8u);
 	}
 
-	if(buffer_index > (BUFFER_SIZE - 16u))
+	if(buffer_index > (BUFFER_SIZE - 24u))
 	{
 		tstr = TEXT("Error: Broken Header (subchunk \"fmt \" might be corrupted).");
 		goto _l_filein_get_params_error;
@@ -1207,3 +1207,4 @@ DWORD WINAPI audiothread_proc(VOID *p_args)
 	PostMessage(p_mainwnd, CUSTOM_WM_PLAYBACK_FINISHED, 0, 0);
 	return 0u;
 }
+
