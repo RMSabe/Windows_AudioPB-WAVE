@@ -13,5 +13,10 @@ If this application is running, no other application will have access to the aud
 2. I was finally able to stream 24bit audio to the output device, however, since the application accesses the audio device in exclusive mode, 
 bit-depth, sample-rate and number of channels must be compatible with the audio device for it to work.
 
+Latest Update:
+Native support for 24bit audio.
+Some bug fixes.
+
 Author: Rafael Sabe
 Email: rafaelmsabe@gmail.com
+
