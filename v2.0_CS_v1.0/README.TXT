@@ -24,6 +24,9 @@ This project currently supports 32-bit and 64-bit x86 based CPUs.
 The C/C++ code is compiled into a DLL file named core.dll. The output file "core.dll" must be placed in the same folder as the C# WPF .exe file.
 Both the C# and C++ output files must have the same target CPU (32-bit x86 or 64-bit x86).
 
+Note: When compiling the Visual Studio solutions, set the build to "Release" mode, not "Debug" mode.
+I didn't notice at first, but when you configure the build settings for "Release" mode, those settings are not automatically copied to "Debug" mode settings.
+
 Latest Updates:
 Some bug fixes.
 Code Optimization.
