@@ -1,0 +1,19 @@
+﻿<!--
+	WAVE Audio Playback for Windows
+	Version 4.0 (Interop C# version 1.0)
+
+	Author: Rafael Sabe
+	Email: rafaelmsabe@gmail.com
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Platforms>x64;x86</Platforms>
+	</PropertyGroup>
+</Project>

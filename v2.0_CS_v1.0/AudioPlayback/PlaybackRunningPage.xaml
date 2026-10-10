@@ -1,0 +1,69 @@
+﻿<!--
+	WAVE Audio Playback for Windows
+	Version 4.0 (Interop C# version 1.0)
+
+	Author: Rafael Sabe
+	Email: rafaelmsabe@gmail.com
+-->
+	
+<local:MyPage
+	x:Class="AudioPlayback.PlaybackRunningPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:local="clr-namespace:AudioPlayback"
+	mc:Ignorable="d">
+
+	<Grid>
+		<TextBlock
+			Name="TextBlock1"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top"
+			Margin="20px"
+			FontSize="35px"
+			TextAlignment="Center"
+			Text="Playback Running"/>
+
+		<Slider
+			Name="Slider_TimeCursor"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Bottom"
+			Width="420px"
+			Height="20px"
+			Margin="90px"
+			Orientation="Horizontal"
+			IsSnapToTickEnabled="true"
+			TickFrequency="1"
+			IsMoveToPointEnabled="true"
+			ValueChanged="onSliderTimeCursorValueChanged"
+			Thumb.DragStarted="onSliderTimeCursorThumbDragStarted"
+			Thumb.DragCompleted="onSliderTimeCursorThumbDragCompleted"/>
+
+		<Grid
+			Name="Container1"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Bottom"
+			Width="420px"
+			Height="20px"
+			Margin="60px">
+
+			<Button
+				Name="Button_PauseResumePlayback"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Bottom"
+				Width="200px"
+				Height="20px"
+				Click="onButtonPauseResumePlaybackClicked"/>
+
+			<Button
+				Name="Button_StopPlayback"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Bottom"
+				Width="200px"
+				Height="20px"
+				Content="Stop Playback"
+				Click="onButtonStopPlaybackClicked"/>
+		</Grid>
+	</Grid>
+</local:MyPage>
